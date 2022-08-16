@@ -31,7 +31,7 @@ const Header = () => {
         dispatch(action)
     }
     return (
-        <AppBar position="static">
+        <AppBar position="fixed">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <ApartmentIcon sx={styles.apartmentIcon} />

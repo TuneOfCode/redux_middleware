@@ -8,7 +8,7 @@ import { useAppSelector } from 'hooks/useAppSelector';
 import { useEffect } from "react";
 
 const styles = {
-    containter: { marginTop: "20px", marginBottom: "30px" },
+    containter: { marginTop: "100px", marginBottom: "30px" },
     card: { maxWidth: 345, height: 555 },
     grid: { display: "flex", justifyContent: "center", alignItem: "center", marginTop: '100px' },
     center: { display: "flex", justifyContent: "center", alignItem: "center" },
@@ -28,7 +28,7 @@ const ProductList = () => {
     const dispatch = useAppDispatch()
     useEffect(() => {
         dispatch(fetchProducts())
-    }, [])
+    }, [dispatch])
     const { products, isLoading } = useAppSelector(state => state.products)
     const handleAddCart = (cart: ICartItem) => {
         dispatch(addToCart(cart))

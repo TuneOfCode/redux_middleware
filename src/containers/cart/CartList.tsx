@@ -13,7 +13,7 @@ const styles = {
         flexDirection: "row",
         justifyContent: "center",
         alignItem: "center",
-        margin: "20px 0"
+        margin: "100px 0"
     },
     boxBtn: {
         display: 'flex',
