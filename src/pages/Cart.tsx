@@ -1,4 +1,4 @@
-import CartList from "components/cart/CartList";
+import CartList from "containers/cart/CartList";
 
 const Cart = () => {
     return (
